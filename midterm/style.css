@@ -12,60 +12,86 @@ body{
 /* header style*/
 
 header{
-    background: url("locke&keybanner.jpg") no-repeat top center/40%;
+    background: url("locke&keybanner.jpg") no-repeat top center/auto;
     padding-bottom: 10cm;
+    
 }
 
 p{
    margin-bottom: 1cm;
    color: aliceblue;
 }
-.btn{
-    display: block;
-    background-color: rgb(194, 22, 22);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    width: 5cm;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    
 
-}
 /* navigation styles*/
 nav{
-    background-color: red;
+    background-color:rgb(128, 14, 33);
     text-decoration: none;
+    padding: 10px;
 }
+nav a{
+    color: rgb(5, 0, 0);
+}
+
 nav a:hover{
     color: black;
  text-decoration: overline;
 
 }
+
 nav li{
     display: inline;
     margin-right: 10px;
     padding: 10px;
-    padding-left: 2cm;
+    padding-left: 2em;
+    font-size: 30px;
 }
 
 main{
     margin-top: 2cm;
 }
 
-.col-left{
+.col-left, .col-right{
  float: left;
  width:48%;
+ clear: both;
 }
 
-.col-right{
-float: right;
-width:48%;
-}
 
 footer{
     clear:both;
     padding: 2cm;
 }
+
+.flexbox{
+    display: flex ;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-right: 1%;   
+    align-items: flex-start;
+}
+.card{
+    display: flex ;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;  
+    align-items: flex-start;
+    background-color:rgb(128, 14, 33);
+}
+
+h2{
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+    background-color:rgb(128, 14, 33);
+}
+
+h1{
+    font-size: 50px;
+    color: white
+}
+h3{
+    font-weight: bold;
+}
+
 
