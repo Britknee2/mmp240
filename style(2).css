@@ -1,0 +1,56 @@
+/* Table Of contents
+
+1. RESTS
+2. Page level styles
+3. Typography
+4. utility style
+5. header and the top navigation
+6. Program Navigation
+7. homepage content
+8.Program pages
+9 Media queries for larger viewport
+*/
+
+/* 2. Page level styles*/
+#wrapper{
+    nav-width: 1200px;
+    Margin: 0 auto;
+}
+html{
+    font-size: 20px;
+
+}
+
+/************** 3. typography ************* */
+
+.flex- container{
+    display: flex;
+    justify-content: space-between;
+
+}
+/************** 4. utilities ************** */
+.larger-text{
+    font-size: larger;
+}
+.img-responsive{
+    width: 100%
+}
+.float-right{
+    float-right;
+}
+/************** 5. header and top Navigation **************** */
+#top-menu{
+    /* display:none ; */
+    width: 100%;
+    padding: 0.5cm;
+    border: solid 1px black;
+    background-color: white;
+
+}
+#top-menu ul{
+    list-style-type: none;
+}
+/************** 6. Program Navigation ************ */
+/************** 7. Homepage content ************ */
+/************** 8. Program pages************ */
+/************** 9. Media queries for larger viewport************ */
