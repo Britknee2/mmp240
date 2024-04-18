@@ -62,9 +62,11 @@ li .dropdown{
 li.dropdown ul{
     display:none;
 }
+
 li.dropdown:hover ul{
  display: block;
 }
+
 .dropdown a{
     display: block;
     padding:5px;
@@ -78,5 +80,20 @@ li li a{
 
 
 /************** 7. Homepage content ************ */
+.banner{
+    padding: 4cm 2cm;
+    background-image: url("bmcccampus.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.banner a{
+    font-size: larger;
+    background-color: rgb(0,0,0,0.5);
+    padding: 0.5em;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+
+}
 /************** 8. Program pages************ */
 /************** 9. Media queries for larger viewport************ */
