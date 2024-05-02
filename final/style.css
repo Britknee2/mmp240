@@ -29,6 +29,10 @@ html{
 
 }
 /************** 4. utilities ************** */
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+}
 .larger-text{
     font-size: larger;
 }
@@ -39,32 +43,38 @@ html{
     float-right;
 }
 /************** 5. header and top Navigation **************** */
+
 #top-menu{
     /* display:none ; */
-    width: 100%;
-    padding: 0.5cm;
-    border: solid 1px black;
+    display: none;
+    padding: 0.5em;
+    border: solid 1px #000;
     background-color: white;
-
+    clear:right
+    position: absolute;
+    right:0;
+    top: 28px;
 }
+
 #top-menu ul{
     list-style-type: none;
 }
+
 /************** 6. Program Navigation ************ */
 
 nav ul{
     list-style-type: none;
 }
 li .dropdown{
-    display:none;
+    border-bottom: solid 1 px black;
 }
 
-li.dropdown ul{
-    display:none;
+li. dropdown ul{
+    display: none;
 }
 
 li.dropdown:hover ul{
- display: block;
+    display: block;
 }
 
 .dropdown a{
@@ -74,12 +84,12 @@ li.dropdown:hover ul{
     text-decoration: none;
 }
 
-li li a{
-    color: grey;
+.expand{
+    float: right;
 }
 
-
 /************** 7. Homepage content ************ */
+
 .banner{
     padding: 4cm 2cm;
     background-image: url("bmcccampus.jpeg");
@@ -93,7 +103,67 @@ li li a{
     padding: 0.5em;
     color: white;
     text-shadow: 2px 2px 2px #000;
+    display:block
+    text-decoration: none;
+}
+
+
+/************** 8. Program pages************ */
+.program-card{
+    background-color: #e6f3fff;
 
 }
-/************** 8. Program pages************ */
+
+.card-body{
+    padding: 0.5em;
+}
+.program-card: hover{
+
+}
+.program-card:img{
+ back
+}
+
+
+
+
+
+
+
 /************** 9. Media queries for larger viewport************ */
+.program-nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+/*. program-nav ul{
+    width: 30%;
+    position: relative;
+}
+.program-nav li li{
+}*/
+
+dropdown{
+    width: 30%;
+    postition:relative;
+}
+dropdown ul{
+    display:block;
+    position:absolute;
+    background-color: white;
+    border: solid 1px #000;
+    padding: 5px;
+    width:100%
+}
+ main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2 em;
+ }
+
+ .news{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.event{
+    grid-column-start: 4;
+}
