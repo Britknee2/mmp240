@@ -4,52 +4,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Design @ CUNY</title>
-  <link rel="stylesheet" href="reset.css">
+  <title>document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
   <div id="wrapper">
     <header class="flex-container">
-      <h1>Design @ CUNY</h1>
+      <h1>CUNY Design</h1>
       <nav>
-        <span class="material-symbols-outlined" class="float right">menu</span>
-        <div id="top-menu"></div>
-        <nav class="top-nav">
-
-          <ul class="flex-direction">
+        <span class="material-symbols-outlined float-right">menu
+        </span>
+        <div id="top-menu">
+          <ul>
             <li><a href="https://www.cuny.edu/about/">About Cuny</a></li>
             <li><a href="https://www.cuny.edu/financial-aid/applying-for-financial-aid/">Financial Aid</a></li>
             <li><a href="https://www.cuny.edu/admissions/undergraduate/apply/cuny-application/?utm_source=navigation">Apply</a></li>
           </ul>
           <form action="#">
-            <input type="search" name="search" placeholder="search...">
+            <input type="search" name="search" value="search">
             <input type="submit">
           </form>
         </div> <!--closing #top-menu-->
-        </nav>
+      </nav>
     </header>
     <div class="program-nav">
       <h2> Find a Design program</h2>
-      <p>search by:</p>
+      <p>Search by:</p>
       <nav>
         <ul>
-          <li class="dropdown"><a href="">discipline</a>
-          </li>
-          <ul>
-          <li><a href="digital.html">digital design</a></li>
-          <li><a href="animation.html">Animation</a></li>
-          <li><a href="industrial.html">indistruial design</a></li>
-          </li>
+          <li class="dropdown"><a href="">discipline<span class="material-symbols-outlined expand">
+                expand_more</span></a>
+            <ul>
+              <li><a href="digital.html">digital design</a></li>
+              <li><a href="animation.html">Animation</a></li>
+              <li><a href="industrial.html">indistruial design</a></li>
         </ul>
-        <li class="dropdown"><a href="">Degrees</a>
+        </li>
+
+        <li class="dropdown"><a href="">Degree<span class="material-symbols-outlined expand">
+              expand_more</span></a>
           <ul>
-            <li class=""><a href="bachelor.html">bacherlors</a></li>
-            <li class=""><a href="associate.html"> assosicates</a></li>
+            <li><a href="bachelor.html">bacherlors</a></li>
+            <li><a href="associate.html"> assosicates</a></li>
           </ul>
         </li>
-        <li class="dropdown"><a href="">borough</a>
+        <li class="dropdown"><a href="">borough<span class="material-symbols-outlined expand">
+              expand_more
+            </span></a>
           <ul>
             <li><a href="brooklyn.html">brooklyn</a></li>
             <li><a href="bronx.html">bronx</a></li>
@@ -60,30 +65,38 @@
         </ul>
       </nav>
     </div> <!- closing program->
-    <div class="banner">
-    </div><! closing banner>
-    <main>
-      <section class="">
-        <article>
-        <h2></h2>
-          <h3></h3>
-          <p class=""></p>
-          <p> < a href="">Read more.</a>
-          </p>
-        </article>
-          <article>
-
-            <h2></h2>
-              <h3></h3>
-              <p class=""></p>
-              <p> < a href="">Read more.</a>
+      <div class="banner">
+      </div><! closing banner>
+        <main>
+          <section class="news">
+            <article>
+              <h2>Design News</h2>
+              <h3>CUNY TV Wins 21st New York Emmy Award For Animated Opening Sequence of ‘Shades of U.S.’</h3>
+              <p class="news-date">April 27,2020</p>
+              <p>The City University of New York won two awards in the 63rd New York Emmy Awards, as CUNY TV and the New York City College of Technology each earned honors in Saturday’s ceremony. The award for CUNY TV brings to 21 the total number of Emmys the station has been awarded by the National Academy of Television Arts & Sciences New York Chapter.
+                <a href="https://www1.cuny.edu/mu/forum/2020/04/27/cuny-tv-wins-21st-new-york-emmy-award-for-animated-opening-sequence-of-shades-of-u-s/#:~:text=U.S.'%20%E2%80%93%20CUNY%20Newswire-,CUNY%20TV%20Wins%2021st%20New%20York%20Emmy%20Award%20For,Sequence%20of%20'Shades%20of%20U.S.'">Read more.</a>
               </p>
-              </article>
-      </section>
-      <section class="events">
-        </section>
-    </main>
-    <footer>Copyright 2020 The City University of New York</footer>
+            </article>
+            <article>
+              <h3>CUNY Expands Digital Skills Curriculum and Creates Student Pipeline for Tech Jobs</h3>
+              <p class="news-date">October 28, 2019</p>
+              <p>The City University of New York has significantly expanded its digital skills curriculum as part of a broad-based effort to produce a steady pipeline of diverse, adaptable, critical thinkers who can thrive in a workplace environment that is increasingly reliant on advanced digital technologies across most sectors of the economy. Another aim of this initiative is to encourage traditionally underrepresented groups to take up tech-focused areas of study.
+                <a href="https://www1.cuny.edu/mu/forum/2019/10/28/cuny-expands-digital-skills-curriculum-and-creates-student-pipeline-for-tech-jobs/">Read more.</a>
+              </p>
+            </article>
+          </section>
+          <section class="events">
+            <article>
+              <h3>Events</h3>
+              <img src="Digital-Design-Showcase.jpg" alt="Design">
+              <p><a href="https://events.cuny.edu/cec/virtual-digital-design-showcase-day/">Virtual Digital Design Showcase Day</a>
+                </p>
+                <p class="events-date">Date: June 18, 2020</p>
+            </article>
+          </section>
+        </main>
+        <footer>Copyright 2020 The City University of New York</footer>
   </div>
 </body>
+
 </html>

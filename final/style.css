@@ -10,47 +10,74 @@
 8.Program pages
 9 Media queries for larger viewport
 */
+/*1. resets*/
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
 
 /* 2. Page level styles*/
+
+body{
+    font-family: sans-serif;
+    line-height:1.5em;
+    margin:0.5em;
+    background-color: rgb(2, 43, 250);
+}
+
 #wrapper{
-    nav-width: 1200px;
+    max-width: 1200px;
     Margin: 0 auto;
 }
+
+input{
+    border: solid 1px black;
+    padding: 3px;
+}
+
 html{
     font-size: 20px;
+}
 
+p,h1, h2, h3, h4{
+    margin-bottom: 1em;
 }
 
 /************** 3. typography ************* */
-
-.flex- container{
-    display: flex;
-    justify-content: space-between;
-
+h1{
+    font-size: 1.5em;
 }
+
 /************** 4. utilities ************** */
 .flex-container{
     display:flex;
     justify-content: space-between;
 }
+
 .larger-text{
     font-size: larger;
 }
+
 .img-responsive{
-    width: 100%
+    width: 100%;
 }
+
 .float-right{
-    float-right;
+    float: right;
 }
+
 /************** 5. header and top Navigation **************** */
+header{
+    position: relative;
+}
 
 #top-menu{
-    /* display:none ; */
     display: none;
     padding: 0.5em;
     border: solid 1px #000;
     background-color: white;
-    clear:right
+    clear:right;
     position: absolute;
     right:0;
     top: 28px;
@@ -65,11 +92,11 @@ html{
 nav ul{
     list-style-type: none;
 }
-li .dropdown{
+li.dropdown{
     border-bottom: solid 1 px black;
 }
 
-li. dropdown ul{
+li.dropdown ul{
     display: none;
 }
 
@@ -78,10 +105,19 @@ li.dropdown:hover ul{
 }
 
 .dropdown a{
-    display: block;
+    background-color:rgb(221, 222, 236);
     padding:5px;
-    color: black;
+    position:relative;
     text-decoration: none;
+    display: block;
+}
+
+.dropdown li a{
+   color: rgb(19, 1, 1);
+}
+
+.dropdown li a:hover{
+    color: rgb(20, 128, 236);
 }
 
 .expand{
@@ -91,10 +127,11 @@ li.dropdown:hover ul{
 /************** 7. Homepage content ************ */
 
 .banner{
-    padding: 4cm 2cm;
+    padding: 6cm 2cm;
     background-image: url("bmcccampus.jpeg");
     background-repeat: no-repeat;
-    background-size: cover ;
+    background-size:cover ;
+    margin: 2em 0;
 }
 
 .banner a{
@@ -103,7 +140,7 @@ li.dropdown:hover ul{
     padding: 0.5em;
     color: white;
     text-shadow: 2px 2px 2px #000;
-    display:block
+    display:block;
     text-decoration: none;
 }
 
@@ -131,10 +168,15 @@ li.dropdown:hover ul{
 
 
 /************** 9. Media queries for larger viewport************ */
-.program-nav ul{
-    display: flex;
-    justify-content: space-between;
+@media (min-wdith:768px;){
+
 }
+
+.program-nav ul{
+    display:flex;
+    justify-content:space-between;
+}
+
 /*. program-nav ul{
     width: 30%;
     position: relative;
@@ -142,11 +184,11 @@ li.dropdown:hover ul{
 .program-nav li li{
 }*/
 
-dropdown{
+.dropdown{
     width: 30%;
-    postition:relative;
+    position: relative;
 }
-dropdown ul{
+.dropdown ul{
     display:block;
     position:absolute;
     background-color: white;
@@ -157,13 +199,14 @@ dropdown ul{
  main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2 em;
+    grid-gap: 2em;
  }
 
- .news{
+.news{
     grid-column-start: 1;
     grid-column-end: 4;
+    
 }
-.event{
+.events{
     grid-column-start: 4;
 }
