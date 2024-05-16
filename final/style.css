@@ -65,6 +65,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h4{
@@ -81,6 +82,12 @@ h6{
 h5{
     font-size: 24px;
     font-family: sans-serif;
+}
+h1 a{
+    color:rgb(98, 149, 227);
+    padding: 40px;
+    font-family: sans-serif;
+    text-decoration: none;
 }
 
 /************** 4. utilities ************** */
@@ -107,25 +114,32 @@ h5{
      position: relative;
 }
 
-top-menu{
-    display: none;
-    padding: 0.5em;
+#top-menu a{
     border: solid 1px black;
     background-color: rgb(255, 255, 255);
-    clear: right;
-    position: absolute;
-    right: 0;
-    top:28px;
-
-
+    text-decoration: none;
+    margin-left: 10px;
 }
 
-
-.top-menu ul{
+#top-menu{
     list-style-type: none;
+    padding: 30px;
+    display:flex;
+ 
+  
 }
 
+#top-menu ul {
+    font-size: 20px;
+    display:inline-flex;
+    padding: 5px;
+}
 
+#top-menu:hover a{
+    background-color: white;
+    color: rgb(8, 36, 247);
+
+}
 
 
 
