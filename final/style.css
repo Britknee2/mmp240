@@ -46,16 +46,18 @@ h1{
     font-size: 1.5em;
     margin-top:10px;
     margin-bottom:10px;
-
+}
+.news{
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 a{
     color: rgb(18, 17, 17);
     font-family: Arial, Helvetica, sans-serif;
 }
-p{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.program p{
+  text-align:left;
     font-family: 'Times New Roman';
 }
 
@@ -65,7 +67,7 @@ h2{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: ' Calibri, 'Trebuchet MS', sans-serif;
 }
 
 h4{
@@ -89,7 +91,18 @@ h1 a{
     font-family: sans-serif;
     text-decoration: none;
 }
+h1:hover a{
+    color:blue;
+}
 
+news p{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
 /************** 4. utilities ************** */
 .flex-container{
     display:flex;
@@ -149,6 +162,7 @@ h1 a{
 nav ul{
     list-style-type: none;
 }
+
 li.dropdown{
     border-bottom: solid 1 px rgb(21, 18, 18);
 }
@@ -178,7 +192,7 @@ li.dropdown:hover ul{
 }
 
 .dropdown li a:hover{
-    color: rgb(116, 121, 126);
+    color: black;
 }
 
 .expand{
@@ -188,6 +202,7 @@ li.dropdown:hover ul{
 .footer{
     background-color: black;
 }
+
 .program-title{
     margin-right: 10px;
 }
@@ -199,7 +214,7 @@ li.dropdown:hover ul{
     background-image: url("bmcccampus.jpeg");
     background-repeat: no-repeat;
     background-size:cover ;
-    margin: 2em 0;
+    margin: 2em 1;
 }
 
 
@@ -233,6 +248,7 @@ button:hover{
     position:absolute;
 
  }
+
  .program-layout{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -251,15 +267,12 @@ button:hover{
   border-radius: 8px;
   margin-bottom: 50px;
   width: 300px;
- 
-  
  }
  
  
  .card-body{
     margin-left: 10px;
     margin-right: 10px;
-    
  }
  
  
@@ -293,6 +306,14 @@ button:hover{
     justify-content:space-between;
 }
 
+.program-nav{
+   background-color:#67a3da;
+   height: 130%;
+   padding: 40px;
+   bott
+   
+}
+
 /*. program-nav ul{
     width: 30%;
     position: relative;
@@ -304,6 +325,7 @@ button:hover{
     width: 30%;
     position: relative;
 }
+
 .dropdown ul{
     display:block;
     position:absolute;
@@ -312,6 +334,7 @@ button:hover{
     padding: 5px;
     width:100%
 }
+
  main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -322,11 +345,8 @@ button:hover{
 .news{
     grid-column-start: 1;
     grid-column-end: 4;
-   
-   
-
-  
 }
+
 .events{
     grid-column-start: 4;
     margin-right: 30px;
